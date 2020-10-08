@@ -1,6 +1,6 @@
 # 2back-2019
 
-This is a 2-back program created in summer 2019.
+This is a 2-back program created in fall 2019.
 
 It has been edited from its original form to remove study-specific details.
 
