@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LabName</title>
+        
+        <!-- default favicon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- wideley used favicon -->
+        <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+        
+        <link rel='stylesheet' href='style.css'>
+
+    </head>
+    
+
+    
+    <body>
+        
+        <header id='lab-header'>
+            <img id='lab-logo' src='logo-img.png' alt='LabName logo' style='display:block;margin-left:auto;margin-right:auto;max-height:100%;max-width:100%;'/>
+        </header>
+        
+        <br>
+        
+        <br>
+        
+        <div id='form-thanks'>
+            <h4 style='text-align:center;'>Thank you for your feedback. We will review your comments and, if you included your email address, respond shortly.</h4>
+        </div>
+        
+        <br>
+        
+        <div id='EOS' style='font-size:16pt;text-align:center;'>
+            <p>Thank you for participating.</p>
+            <p><b>Your validation code is:</b></p>
+            <p id='sscode-ctn'></p>
+            <p>To receive payment for participating, click "Accept HIT" in the Mechanical Turk window, enter this validation code, then click "Submit".</p>
+        </div>
+        
+        <div id='feedback-form' style='text-align:center'>
+        
+            <p>If you had any technical issues with today's task or if you have any feedback you'd like to give us, fill out our <a href='form.html'>Feedback Form</a>.</p>
+        
+        </div>
+        
+        <br>
+        
+        <br>
+        
+        <div id='feedback-letter'>
+            <p><b>Project Title:</b> [TITLE]</p>
+            <p><b>Faculty Researcher:</b> [PRINCIPAL INVESTIGATOR NAME], <a href="mailto:pi@university.edu">[PI EMAIL]</a>, Department of [DEPARTMENT], [UNIVERSITY]</p>
+            <p><b>What was this study about?</b> [PURPOSE]</p>
+            <p><b>How was the study conducted?</b> [METHODS]</p>
+            <p><b>What was the hypothesis?</b> [HYPOTHESIS]</p> 
+            <p><b>Why is this study important?</b> [IMPLICATIONS]</p>
+            <p><b>References</b>:</p>
+            <ul>
+                <li>SURNAME, A.A., &amp; SURNAME, B.B. (YEAR). TITLE OF ARTICLE. <i>TITLE OF JOURNAL, VOLUME#</i>(ISSUE#), PAGES.</li>
+            </ul>
+            <p><b>How to contact the research team:</b>  If you have questions or concerns about your participation or payment, or want to request a summary of research findings, please contact our lab manager: [LAB MANAGER NAME], <a href="mailto:lab.manager@university.edu">[LAB MANAGER EMAIL]</a>. Eventually, the conclusions of this study will be shared with the research community through seminars, conferences, presentations, and journal articles.</p> 	
+            <p><b>Whom to contact about your rights in this research:</b> As with all [UNIVERSITY] studies involving human participants, this project was reviewed by, and has received ethics clearance through [IRB COMMITTEE]. If you have questions about the rights of participants in research, please contact the [IRB COMMITTEE] at [IRB PHONE] or at <a href="mailto:irb@university.edu">[IRB EMAIL]</a>.</p>
+            <p style='text-align:center;'><b>Please do not disclose our research procedures and hypotheses to anyone who might participate as this could affect our results.</b></p>
+            <p style='text-align:center;'><b>Thanks so much for participating!</b></p>
+            <br>
+            <br>
+            <br>
+        </div>
+        
+        <script>
+        
+            var sscode = sessionStorage.getItem("sscode");
+            console.log("the ss code is " + sscode);
+            var form_submit = sessionStorage.getItem("form_submit");
+            console.log("form submit = " + form_submit);
+
+            //show an element
+            function showPage(doc_ele) {
+                doc_ele.style.visibility = 'visible';
+                doc_ele.style.display = 'inline';
+            }
+
+            //hide an element   
+            function hidePage(doc_ele) {
+                doc_ele.style.visibility = 'hidden';
+                doc_ele.style.display = 'none';
+            }
+            
+            const sscode_ctn = document.getElementById('sscode-ctn');
+            const form_thanks = document.getElementById('form-thanks');
+            const feedback_form = document.getElementById('feedback-form');
+            const EOS = document.getElementById('EOS');
+            const feedback_letter = document.getElementById('feedback-letter');
+
+            if(form_submit==1){
+                console.log("it's true!");
+                showPage(form_thanks);
+                hidePage(feedback_form);
+            }
+            
+            else{
+                showPage(feedback_form);
+            }
+            
+            showPage(sscode_ctn);
+            showPage(EOS);
+            showPage(feedback_letter);            
+            sscode_ctn.innerHTML = "<h3>" + sscode + "</h3>";
+        
+        </script>
+ 
+    </body>
+
+</html>

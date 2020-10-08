@@ -1,0 +1,153 @@
+div,button{
+    display:none;
+    visibility:hidden;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+H2{
+    text-align:left;
+    color:#57585b;
+}
+
+H3,H4{
+    color:#57585b;
+    text-align:center;
+}
+
+p,ul{
+    color:#57585b;
+}
+
+ul{
+    list-style: none
+}
+
+body{
+  /*top right bottom left*/
+  /*padding: 40px 40px 0px 40px;*/
+ /* padding: 40px 100px 10px 100px;*/
+    padding: 40px 100px 10px 100px;
+    background-color:#ffffff;
+}
+
+button{
+    /*top right bottom left*/
+    padding: 8px 12px 8px 12px;
+    text-transform:uppercase;
+    color:#57585b;
+}
+
+#stim-container,
+#letter-container,
+#cross-container {
+    position:fixed;
+	top:50%;
+	left:50%;
+	margin:auto;
+	transform: translate(-50%, -50%);
+	font-size:62px;
+	color:#57585b;
+}
+
+/*#myDIV{
+    height:100px;
+    width:100px;
+    background-color: white;
+    border: 5px solid #57585b;
+    position:absolute;
+            }*/
+
+#lab-header{
+    text-align:center;
+    max-height:150px;
+    max-width:100%;
+    background-color:white;
+    display: inline;
+}
+
+#lab-logo{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-height:100%;
+    max-width:100%;
+}
+
+input[type=radio]{
+    border:0px;
+    width:25px;
+    height:25px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+}
+
+input[type='radio'],label{
+    font-size: 16px;
+    vertical-align:middle;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+    color:#57585b;
+
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table.test{
+    width:auto;
+}
+
+tbody.test{
+    border-style:none;
+}
+
+tbody.test:hover{
+    background-color:white;
+}
+            
+tbody{
+    border-style:solid;
+    border-width:1px;
+    border-color:#57585b;
+}
+            
+tbody:hover {
+    background-color: #f5f5f5;
+}
+            
+td,th{
+    text-align:center;
+    color:#57585b;
+}
+         
+td.text,th.text{
+    width:40%;
+}
+
+td#myDIV{
+    border-style:solid;
+    border-width:1px;
+    border-color:#57585b;
+    padding:10px;
+}
+            
+td.first{
+    text-align:right;
+}
+            
+td.last{
+    text-align:left;
+}
+            
+.separator{
+    height:10px;
+    border:none;
+}
+
+.separator:hover{
+    background-color: white;
+}

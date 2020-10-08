@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LabName</title>
+        
+        <!-- default favicon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- wideley used favicon -->
+        <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+        
+        <link rel='stylesheet' href='style.css'>
+    
+    </head>
+    
+    <body>
+        
+        <noscript>
+            <p>Javascript has been disabled in your browser.</p>
+            <p>In order to complete this study, you must enable JavaScript.</p>
+            <p>Here are <a href="https://www.enable-javascript.com/">instructions on how to enable JavaScript in your web browser</a>.</p>
+        </noscript>
+        
+        <form action='server-side2.php' id='survey-form' method='post'>
+            <input type='hidden' name='put-study-id-here' id ='put-study-id-here' value = ''/>
+            <input type='hidden' name='put-ss-code-here' id ='put-ss-code-here' value = ''/>
+            <input type='hidden' name='put-survey-data-here' id ='put-survey-data-here' value = ''/>
+        </form>
+        
+        <header id='lab-header'>
+            <img id='lab-logo' src='logo-img.png' alt='LabName logo'/>
+        </header>
+        
+        <div id='survey-instr'>
+        <p>Thank you for completing the task. You will now answer a series of questions about your recent mental state followed by a few questions about your demographic information, like your age and your gender. After answering these questions, you will be given the verification code that you will need to receive payment from [PLATFORM]. Your answers will not impact your payment in any way and information collected will not be stored with any identifiers that could potentially connect it back to you, so please do your best to answer each question as honestly as possible.</p>
+        </div>
+        
+        <div id='spontaneous-mw-survey'>
+            
+            <table>
+                
+                <caption><h3>[INSTRUCTIONS].</h3></caption>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>SMW STATEMENT 1</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>A Lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='smw1' value='1' /></td>
+                        <td><input type='radio' name='smw1' value='2' /></td>
+                        <td><input type='radio' name='smw1' value='3' /></td>
+                        <td><input type='radio' name='smw1' value='4' /></td>
+                        <td><input type='radio' name='smw1' value='5' /></td>
+                        <td><input type='radio' name='smw1' value='6' /></td>
+                        <td><input type='radio' name='smw1' value='7' /></td>
+                        <td><input type='radio' name='smw1' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>SMW STATEMENT 2</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>A Lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='smw2' value='1' /></td>
+                        <td><input type='radio' name='smw2' value='2' /></td>
+                        <td><input type='radio' name='smw2' value='3' /></td>
+                        <td><input type='radio' name='smw2' value='4' /></td>
+                        <td><input type='radio' name='smw2' value='5' /></td>
+                        <td><input type='radio' name='smw2' value='6' /></td>
+                        <td><input type='radio' name='smw2' value='7' /></td>
+                        <td><input type='radio' name='smw2' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>SMW STATEMENT 3</td>
+                        <td rowspan='2' class='first'>Almost Never</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>Always</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='smw3' value='1' /></td>
+                        <td><input type='radio' name='smw3' value='2' /></td>
+                        <td><input type='radio' name='smw3' value='3' /></td>
+                        <td><input type='radio' name='smw3' value='4' /></td>
+                        <td><input type='radio' name='smw3' value='5' /></td>
+                        <td><input type='radio' name='smw3' value='6' /></td>
+                        <td><input type='radio' name='smw3' value='7' /></td>
+                        <td><input type='radio' name='smw3' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>SMW STATEMENT 4</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>A Lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='smw4' value='1' /></td>
+                        <td><input type='radio' name='smw4' value='2' /></td>
+                        <td><input type='radio' name='smw4' value='3' /></td>
+                        <td><input type='radio' name='smw4' value='4' /></td>
+                        <td><input type='radio' name='smw4' value='5' /></td>
+                        <td><input type='radio' name='smw4' value='6' /></td>
+                        <td><input type='radio' name='smw4' value='7' /></td>
+                        <td><input type='radio' name='smw4' value='none' /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+        
+        <div id='deliberate-mw-survey'>
+            <table>
+                
+                <caption><h3>[INSTRUCTIONS].</h3></caption>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>DMW STATEMENT 1</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>A Lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='dmw1' value='1' /></td>
+                        <td><input type='radio' name='dmw1' value='2' /></td>
+                        <td><input type='radio' name='dmw1' value='3' /></td>
+                        <td><input type='radio' name='dmw1' value='4' /></td>
+                        <td><input type='radio' name='dmw1' value='5' /></td>
+                        <td><input type='radio' name='dmw1' value='6' /></td>
+                        <td><input type='radio' name='dmw1' value='7' /></td>
+                        <td><input type='radio' name='dmw1' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>DMW STATEMENT 2</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan="2" class="last">A Lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='dmw2' value='1' /></td>
+                        <td><input type='radio' name='dmw2' value='2' /></td>
+                        <td><input type='radio' name='dmw2' value='3' /></td>
+                        <td><input type='radio' name='dmw2' value='4' /></td>
+                        <td><input type='radio' name='dmw2' value='5' /></td>
+                        <td><input type='radio' name='dmw2' value='6' /></td>
+                        <td><input type='radio' name='dmw2' value='7' /></td>
+                        <td><input type='radio' name='dmw2' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>DMW STATEMENT 3</td>
+                        <td rowspan='2' class='first'>Not At All True</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan="2" class="last">Very True</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='dmw3' value='1' /></td>
+                        <td><input type='radio' name='dmw3' value='2' /></td>
+                        <td><input type='radio' name='dmw3' value='3' /></td>
+                        <td><input type='radio' name='dmw3' value='4' /></td>
+                        <td><input type='radio' name='dmw3' value='5' /></td>
+                        <td><input type='radio' name='dmw3' value='6' /></td>
+                        <td><input type='radio' name='dmw3' value='7' /></td>
+                        <td><input type='radio' name='dmw3' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>DMW STATEMENT 4</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan="2" class="last">A lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='dmw4' value='1' /></td>
+                        <td><input type='radio' name='dmw4' value='2' /></td>
+                        <td><input type='radio' name='dmw4' value='3' /></td>
+                        <td><input type='radio' name='dmw4' value='4' /></td>
+                        <td><input type='radio' name='dmw4' value='5' /></td>
+                        <td><input type='radio' name='dmw4' value='6' /></td>
+                        <td><input type='radio' name='dmw4' value='7' /></td>
+                        <td><input type='radio' name='dmw4' value='none' /></td>
+                    </tr>
+                </tbody>
+            
+            </table>
+            <br>
+        
+        </div>
+        
+        <div id="unguided-thought-survey">
+        
+            <table>
+                
+                <caption><h3>[INSTRUCTIONS].</h3></caption>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>UMW STATEMENT 1</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>A Lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='ut1' value='1' /></td>
+                        <td><input type='radio' name='ut1' value='2' /></td>
+                        <td><input type='radio' name='ut1' value='3' /></td>
+                        <td><input type='radio' name='ut1' value='4' /></td>
+                        <td><input type='radio' name='ut1' value='5' /></td>
+                        <td><input type='radio' name='ut1' value='6' /></td>
+                        <td><input type='radio' name='ut1' value='7' /></td>
+                        <td><input type='radio' name='ut1' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>UMW STATEMENT 2</td>
+                        <td rowspan='2' class='first'>Not At All True</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>Very True</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='ut2' value='1' /></td>
+                        <td><input type='radio' name='ut2' value='2' /></td>
+                        <td><input type='radio' name='ut2' value='3' /></td>
+                        <td><input type='radio' name='ut2' value='4' /></td>
+                        <td><input type='radio' name='ut2' value='5' /></td>
+                        <td><input type='radio' name='ut2' value='6' /></td>
+                        <td><input type='radio' name='ut2' value='7' /></td>
+                        <td><input type='radio' name='ut2' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>UMW STATEMENT 3</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>A Lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='ut3' value='1' /></td>
+                        <td><input type='radio' name='ut3' value='2' /></td>
+                        <td><input type='radio' name='ut3' value='3' /></td>
+                        <td><input type='radio' name='ut3' value='4' /></td>
+                        <td><input type='radio' name='ut3' value='5' /></td>
+                        <td><input type='radio' name='ut3' value='6' /></td>
+                        <td><input type='radio' name='ut3' value='7' /></td>
+                        <td><input type='radio' name='ut3' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>UMW STATEMENT 4</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>A Lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='ut4' value='1' /></td>
+                        <td><input type='radio' name='ut4' value='2' /></td>
+                        <td><input type='radio' name='ut4' value='3' /></td>
+                        <td><input type='radio' name='ut4' value='4' /></td>
+                        <td><input type='radio' name='ut4' value='5' /></td>
+                        <td><input type='radio' name='ut4' value='6' /></td>
+                        <td><input type='radio' name='ut4' value='7' /></td>
+                        <td><input type='radio' name='ut4' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>UMW STATEMENT 5</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>A Lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='ut5' value='1' /></td>
+                        <td><input type='radio' name='ut5' value='2' /></td>
+                        <td><input type='radio' name='ut5' value='3' /></td>
+                        <td><input type='radio' name='ut5' value='4' /></td>
+                        <td><input type='radio' name='ut5' value='5' /></td>
+                        <td><input type='radio' name='ut5' value='6' /></td>
+                        <td><input type='radio' name='ut5' value='7' /></td>
+                        <td><input type='radio' name='ut5' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>UMW STATEMENT 6</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>A Lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='ut6' value='1' /></td>
+                        <td><input type='radio' name='ut6' value='2' /></td>
+                        <td><input type='radio' name='ut6' value='3' /></td>
+                        <td><input type='radio' name='ut6' value='4' /></td>
+                        <td><input type='radio' name='ut6' value='5' /></td>
+                        <td><input type='radio' name='ut6' value='6' /></td>
+                        <td><input type='radio' name='ut6' value='7' /></td>
+                        <td><input type='radio' name='ut6' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>UMW STATEMENT 7</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>A Lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='ut7' value='1' /></td>
+                        <td><input type='radio' name='ut7' value='2' /></td>
+                        <td><input type='radio' name='ut7' value='3' /></td>
+                        <td><input type='radio' name='ut7' value='4' /></td>
+                        <td><input type='radio' name='ut7' value='5' /></td>
+                        <td><input type='radio' name='ut7' value='6' /></td>
+                        <td><input type='radio' name='ut7' value='7' /></td>
+                        <td><input type='radio' name='ut7' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>UMW STATEMENT 8</td>
+                        <td rowspan='2' class='first'>Rarely</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td rowspan='2' class='last'>A Lot</td>
+                        <td>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='ut8' value='1' /></td>
+                        <td><input type='radio' name='ut8' value='2' /></td>
+                        <td><input type='radio' name='ut8' value='3' /></td>
+                        <td><input type='radio' name='ut8' value='4' /></td>
+                        <td><input type='radio' name='ut8' value='5' /></td>
+                        <td><input type='radio' name='ut8' value='6' /></td>
+                        <td><input type='radio' name='ut8' value='7' /></td>
+                        <td><input type='radio' name='ut8' value='none' /></td>
+                    </tr>
+                </tbody>
+            
+            </table>
+            <br>
+        
+        </div>
+        
+        <div id='dass'>
+            
+            <table>
+                
+                <caption><h3>[INSTRUCTIONS].</h3></caption>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 1</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass1' value='0' /></td>
+                        <td><input type='radio' name='dass1' value='1' /></td>
+                        <td><input type='radio' name='dass1' value='2' /></td>
+                        <td><input type='radio' name='dass1' value='3' /></td>
+                        <td><input type='radio' name='dass1' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 2</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass2' value='0' /></td>
+                        <td><input type='radio' name='dass2' value='1' /></td>
+                        <td><input type='radio' name='dass2' value='2' /></td>
+                        <td><input type='radio' name='dass2' value='3' /></td>
+                        <td><input type='radio' name='dass2' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 3</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass3' value='0' /></td>
+                        <td><input type='radio' name='dass3' value='1' /></td>
+                        <td><input type='radio' name='dass3' value='2' /></td>
+                        <td><input type='radio' name='dass3' value='3' /></td>
+                        <td><input type='radio' name='dass3' value='none' /></td>
+                    </tr>
+                </tbody>
+
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 4</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass4' value='0' /></td>
+                        <td><input type='radio' name='dass4' value='1' /></td>
+                        <td><input type='radio' name='dass4' value='2' /></td>
+                        <td><input type='radio' name='dass4' value='3' /></td>
+                        <td><input type='radio' name='dass4' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 5</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass5' value='0' /></td>
+                        <td><input type='radio' name='dass5' value='1' /></td>
+                        <td><input type='radio' name='dass5' value='2' /></td>
+                        <td><input type='radio' name='dass5' value='3' /></td>
+                        <td><input type='radio' name='dass5' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 6</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass6' value='0' /></td>
+                        <td><input type='radio' name='dass6' value='1' /></td>
+                        <td><input type='radio' name='dass6' value='2' /></td>
+                        <td><input type='radio' name='dass6' value='3' /></td>
+                        <td><input type='radio' name='dass6' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 7</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass7' value='0' /></td>
+                        <td><input type='radio' name='dass7' value='1' /></td>
+                        <td><input type='radio' name='dass7' value='2' /></td>
+                        <td><input type='radio' name='dass7' value='3' /></td>
+                        <td><input type='radio' name='dass7' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 8</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass8' value='0' /></td>
+                        <td><input type='radio' name='dass8' value='1' /></td>
+                        <td><input type='radio' name='dass8' value='2' /></td>
+                        <td><input type='radio' name='dass8' value='3' /></td>
+                        <td><input type='radio' name='dass8' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 9</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass9' value='0' /></td>
+                        <td><input type='radio' name='dass9' value='1' /></td>
+                        <td><input type='radio' name='dass9' value='2' /></td>
+                        <td><input type='radio' name='dass9' value='3' /></td>
+                        <td><input type='radio' name='dass9' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 10</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass10' value='0' /></td>
+                        <td><input type='radio' name='dass10' value='1' /></td>
+                        <td><input type='radio' name='dass10' value='2' /></td>
+                        <td><input type='radio' name='dass10' value='3' /></td>
+                        <td><input type='radio' name='dass10' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 11</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass11' value='0' /></td>
+                        <td><input type='radio' name='dass11' value='1' /></td>
+                        <td><input type='radio' name='dass11' value='2' /></td>
+                        <td><input type='radio' name='dass11' value='3' /></td>
+                        <td><input type='radio' name='dass11' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 12</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass12' value='0' /></td>
+                        <td><input type='radio' name='dass12' value='1' /></td>
+                        <td><input type='radio' name='dass12' value='2' /></td>
+                        <td><input type='radio' name='dass12' value='3' /></td>
+                        <td><input type='radio' name='dass12' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 13</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass13' value='0' /></td>
+                        <td><input type='radio' name='dass13' value='1' /></td>
+                        <td><input type='radio' name='dass13' value='2' /></td>
+                        <td><input type='radio' name='dass13' value='3' /></td>
+                        <td><input type='radio' name='dass13' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 14</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass14' value='0' /></td>
+                        <td><input type='radio' name='dass14' value='1' /></td>
+                        <td><input type='radio' name='dass14' value='2' /></td>
+                        <td><input type='radio' name='dass14' value='3' /></td>
+                        <td><input type='radio' name='dass14' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 15</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass15' value='0' /></td>
+                        <td><input type='radio' name='dass15' value='1' /></td>
+                        <td><input type='radio' name='dass15' value='2' /></td>
+                        <td><input type='radio' name='dass15' value='3' /></td>
+                        <td><input type='radio' name='dass15' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 16</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass16' value='0' /></td>
+                        <td><input type='radio' name='dass16' value='1' /></td>
+                        <td><input type='radio' name='dass16' value='2' /></td>
+                        <td><input type='radio' name='dass16' value='3' /></td>
+                        <td><input type='radio' name='dass16' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 17</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass17' value='0' /></td>
+                        <td><input type='radio' name='dass17' value='1' /></td>
+                        <td><input type='radio' name='dass17' value='2' /></td>
+                        <td><input type='radio' name='dass17' value='3' /></td>
+                        <td><input type='radio' name='dass17' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 18</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass18' value='0' /></td>
+                        <td><input type='radio' name='dass18' value='1' /></td>
+                        <td><input type='radio' name='dass18' value='2' /></td>
+                        <td><input type='radio' name='dass18' value='3' /></td>
+                        <td><input type='radio' name='dass18' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 19</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass19' value='0' /></td>
+                        <td><input type='radio' name='dass19' value='1' /></td>
+                        <td><input type='radio' name='dass19' value='2' /></td>
+                        <td><input type='radio' name='dass19' value='3' /></td>
+                        <td><input type='radio' name='dass19' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 20</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass20' value='0' /></td>
+                        <td><input type='radio' name='dass20' value='1' /></td>
+                        <td><input type='radio' name='dass20' value='2' /></td>
+                        <td><input type='radio' name='dass20' value='3' /></td>
+                        <td><input type='radio' name='dass20' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>DEPRESSION STATEMENT 21</td>
+                        <td rowspan='2'>Did not apply to me at all</td>
+                        <td rowspan='2'>Applied to me to some degree, or some of the time</td>
+                        <td rowspan='2'>Applied to me to a considerable degree or a good part of the time</td>
+                        <td rowspan='2'>Applied to me very much or most of the time</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='dass21' value='0' /></td>
+                        <td><input type='radio' name='dass21' value='1' /></td>
+                        <td><input type='radio' name='dass21' value='2' /></td>
+                        <td><input type='radio' name='dass21' value='3' /></td>
+                        <td><input type='radio' name='dass21' value='none' /></td>
+                    </tr>
+                </tbody>
+        
+            </table>
+            <br>
+        
+        </div>
+        
+        <div id='asrs'>
+            
+            <table>
+                
+                <caption><h3>[INSTRUCTIONS].</h3></caption>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>STRESS STATEMENT 1</td>
+                        <td>Never</td>
+                        <td>Rarely</td>
+                        <td>Sometimes</td>
+                        <td>Often</td>
+                        <td>Very Often</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='asrs1' value='0' /></td>
+                        <td><input type='radio' name='asrs1' value='1' /></td>
+                        <td><input type='radio' name='asrs1' value='2' /></td>
+                        <td><input type='radio' name='asrs1' value='3' /></td>
+                        <td><input type='radio' name='asrs1' value='4' /></td>
+                        <td><input type='radio' name='asrs1' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>STRESS STATEMENT 2</td>
+                        <td>Never</td>
+                        <td>Rarely</td>
+                        <td>Sometimes</td>
+                        <td>Often</td>
+                        <td>Very Often</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='asrs2' value='0' /></td>
+                        <td><input type='radio' name='asrs2' value='1' /></td>
+                        <td><input type='radio' name='asrs2' value='2' /></td>
+                        <td><input type='radio' name='asrs2' value='3' /></td>
+                        <td><input type='radio' name='asrs2' value='4' /></td>
+                        <td><input type='radio' name='asrs2' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>STRESS STATEMENT 3</td>
+                        <td>Never</td>
+                        <td>Rarely</td>
+                        <td>Sometimes</td>
+                        <td>Often</td>
+                        <td>Very Often</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='asrs3' value='0' /></td>
+                        <td><input type='radio' name='asrs3' value='1' /></td>
+                        <td><input type='radio' name='asrs3' value='2' /></td>
+                        <td><input type='radio' name='asrs3' value='3' /></td>
+                        <td><input type='radio' name='asrs3' value='4' /></td>
+                        <td><input type='radio' name='asrs3' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>STRESS STATEMENT 4</td>
+                        <td>Never</td>
+                        <td>Rarely</td>
+                        <td>Sometimes</td>
+                        <td>Often</td>
+                        <td>Very Often</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='asrs4' value='0' /></td>
+                        <td><input type='radio' name='asrs4' value='1' /></td>
+                        <td><input type='radio' name='asrs4' value='2' /></td>
+                        <td><input type='radio' name='asrs4' value='3' /></td>
+                        <td><input type='radio' name='asrs4' value='4' /></td>
+                        <td><input type='radio' name='asrs4' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>STRESS STATEMENT 5</td>
+                        <td>Never</td>
+                        <td>Rarely</td>
+                        <td>Sometimes</td>
+                        <td>Often</td>
+                        <td>Very Often</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='asrs5' value='0' /></td>
+                        <td><input type='radio' name='asrs5' value='1' /></td>
+                        <td><input type='radio' name='asrs5' value='2' /></td>
+                        <td><input type='radio' name='asrs5' value='3' /></td>
+                        <td><input type='radio' name='asrs5' value='4' /></td>
+                        <td><input type='radio' name='asrs5' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>STRESS STATEMENT 6</td>
+                        <td>Never</td>
+                        <td>Rarely</td>
+                        <td>Sometimes</td>
+                        <td>Often</td>
+                        <td>Very Often</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='asrs6' value='0' /></td>
+                        <td><input type='radio' name='asrs6' value='1' /></td>
+                        <td><input type='radio' name='asrs6' value='2' /></td>
+                        <td><input type='radio' name='asrs6' value='3' /></td>
+                        <td><input type='radio' name='asrs6' value='4' /></td>
+                        <td><input type='radio' name='asrs6' value='none' /></td>
+                    </tr>
+                </tbody>
+            
+            </table>
+            <br>
+            
+        </div>
+        
+        <div id='docs'>
+            <p>[INSTRUCTIONS].</p>
+            <br>
+        </div>
+        
+        <div id='docs-p1'>
+            <h3>Category 1: [TITLE]</h3>
+            <p><i>Examples...</i></p>
+            <ul>
+                <li>EXAMPLE 1</li>
+                <li>EXAMPLE 2</li>
+                <li>EXAMPLE 3</li>
+                <li>EXAMPLE 4</li>
+                <li>EXAMPLE 5</li>
+            </ul>
+            <br>
+            <table>
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 1 STATEMENT 2</td>
+                        <td rowspan='2'>None at All</td>
+                        <td rowspan='2'>Less Than 1 Hour Each Day</td>
+                        <td rowspan='2'>Between 1 and 3 Hours Each Day</td>
+                        <td rowspan='2'>Between 3 and 8 Hours Each Day</td>
+                        <td rowspan='2'>8 Hours or More Each Day</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                        <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs1' value='0' /></td>
+                        <td><input type='radio' name='docs1' value='1' /></td>
+                        <td><input type='radio' name='docs1' value='2' /></td>
+                        <td><input type='radio' name='docs1' value='3' /></td>
+                        <td><input type='radio' name='docs1' value='4' /></td>
+                        <td><input type='radio' name='docs1' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 1 STATEMENT 2</td>
+                        <td rowspan='2'>None at All</td>
+                        <td rowspan='2'>A Little Avoidance</td>
+                        <td rowspan='2'>A Moderate Amount of Avoidance</td>
+                        <td rowspan='2'>A Great Deal of Avoidance</td>
+                        <td rowspan='2'>Extreme Avoidance of Nearly All things</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs2' value='0' /></td>
+                        <td><input type='radio' name='docs2' value='1' /></td>
+                        <td><input type='radio' name='docs2' value='2' /></td>
+                        <td><input type='radio' name='docs2' value='3' /></td>
+                        <td><input type='radio' name='docs2' value='4' /></td>
+                        <td><input type='radio' name='docs2' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 1 STATEMENT 3</td>
+                        <td rowspan='2'>Not at All Distressed / Anxious</td>
+                        <td rowspan='2'>Mildly Distressed / Anxious</td>
+                        <td rowspan='2'>Moderately Distressed / Anxious</td>
+                        <td rowspan='2'>Severely Distressed / Anxious</td>
+                        <td rowspan='2'>Extremely Distressed / Anxious</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs3' value='0' /></td>
+                        <td><input type='radio' name='docs3' value='1' /></td>
+                        <td><input type='radio' name='docs3' value='2' /></td>
+                        <td><input type='radio' name='docs3' value='3' /></td>
+                        <td><input type='radio' name='docs3' value='4' /></td>
+                        <td><input type='radio' name='docs3' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 1 STATEMENT 4</td>
+                        <td rowspan='2'>No Disruption at All</td>
+                        <td rowspan='2'>A Little Disruption, but I Mostly Function Well</td>
+                        <td rowspan='2'>Many Things Are Disrupted, but I Can Still Manage</td>
+                        <td rowspan='2'>My Life Is Disrupted in Many Ways and I Have Trouble Managing</td>
+                        <td rowspan='2'>My Life Is Completely Disrupted and I Cannot Function at All</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs4' value='0' /></td>
+                        <td><input type='radio' name='docs4' value='1' /></td>
+                        <td><input type='radio' name='docs4' value='2' /></td>
+                        <td><input type='radio' name='docs4' value='3' /></td>
+                        <td><input type='radio' name='docs4' value='4' /></td>
+                        <td><input type='radio' name='docs4' value='none' /></td>
+                    </tr>
+                </tbody>
+
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 1 STATEMENT 5</td>
+                        <td rowspan='2'>None at All Difficult</td>
+                        <td rowspan='2'>A Little Difficult</td>
+                        <td rowspan='2'>Moderately Difficult</td>
+                        <td rowspan='2'>Very Difficult</td>
+                        <td rowspan='2'>Extremely Difficult</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs5' value='0' /></td>
+                        <td><input type='radio' name='docs5' value='1' /></td>
+                        <td><input type='radio' name='docs5' value='2' /></td>
+                        <td><input type='radio' name='docs5' value='3' /></td>
+                        <td><input type='radio' name='docs5' value='4' /></td>
+                        <td><input type='radio' name='docs5' value='none' /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+        
+        <div id='docs-p2'>
+            <h3>Category 2: [TITLE]</h3>
+            <p><i>Examples...</i></p>
+            <ul>
+                <li>EXAMPLE 1</li>
+                <li>EXAMPLE 2</li>
+                <li>EXAMPLE 3</li>
+                <li>EXAMPLE 4</li>
+                <li>EXAMPLE 5</li>
+            </ul>
+            <br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 2 STATEMENT 1</td>
+                        <td rowspan='2'>None at All</td>
+                        <td rowspan='2'>Less Than 1 Hour Each Day</td>
+                        <td rowspan='2'>Between 1 and 3 Hours Each Day</td>
+                        <td rowspan='2'>Between 3 and 8 Hours Each Day</td>
+                        <td rowspan='2'>8 Hours or More Each Day</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs6' value='0' /></td>
+                        <td><input type='radio' name='docs6' value='1' /></td>
+                        <td><input type='radio' name='docs6' value='2' /></td>
+                        <td><input type='radio' name='docs6' value='3' /></td>
+                        <td><input type='radio' name='docs6' value='4' /></td>
+                        <td><input type='radio' name='docs6' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 2 STATEMENT 2</td>
+                        <td rowspan='2'>None at All</td>
+                        <td rowspan='2'>A Little Avoidance</td>
+                        <td rowspan='2'>A Moderate Amount of Avoidance</td>
+                        <td rowspan='2'>A Great Deal of Avoidance</td>
+                        <td rowspan='2'>Extreme Avoidance of Nearly All things</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs7' value='0' /></td>
+                        <td><input type='radio' name='docs7' value='1' /></td>
+                        <td><input type='radio' name='docs7' value='2' /></td>
+                        <td><input type='radio' name='docs7' value='3' /></td>
+                        <td><input type='radio' name='docs7' value='4' /></td>
+                        <td><input type='radio' name='docs7' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 2 STATEMENT 3</td>
+                        <td rowspan='2'>Not at All Distressed / Anxious</td>
+                        <td rowspan='2'>Mildly Distressed / Anxious</td>
+                        <td rowspan='2'>Moderately Distressed / Anxious</td>
+                        <td rowspan='2'>Severely Distressed / Anxious</td>
+                        <td rowspan='2'>Extremely Distressed / Anxious</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs8' value='0' /></td>
+                        <td><input type='radio' name='docs8' value='1' /></td>
+                        <td><input type='radio' name='docs8' value='2' /></td>
+                        <td><input type='radio' name='docs8' value='3' /></td>
+                        <td><input type='radio' name='docs8' value='4' /></td>
+                        <td><input type='radio' name='docs8' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 2 STATEMENT 4</td>
+                        <td rowspan='2'>No Disruption at All</td>
+                        <td rowspan='2'>A Little Disruption, but I Mostly Function Well</td>
+                        <td rowspan='2'>Many Things Are Disrupted, but I Can Still Manage</td>
+                        <td rowspan='2'>My Life Is Disrupted in Many Ways and I Have Trouble Managing</td>
+                        <td rowspan='2'>My Life Is Completely Disrupted and I Cannot Function at All</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs9' value='0' /></td>
+                        <td><input type='radio' name='docs9' value='1' /></td>
+                        <td><input type='radio' name='docs9' value='2' /></td>
+                        <td><input type='radio' name='docs9' value='3' /></td>
+                        <td><input type='radio' name='docs9' value='4' /></td>
+                        <td><input type='radio' name='docs9' value='none' /></td>
+                    </tr>
+                </tbody>
+
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 2 STATEMENT 5</td>
+                        <td rowspan='2'>None at All Difficult</td>
+                        <td rowspan='2'>A Little Difficult</td>
+                        <td rowspan='2'>Moderately Difficult</td>
+                        <td rowspan='2'>Very Difficult</td>
+                        <td rowspan='2'>Extremely Difficult</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs10' value='0' /></td>
+                        <td><input type='radio' name='docs10' value='1' /></td>
+                        <td><input type='radio' name='docs10' value='2' /></td>
+                        <td><input type='radio' name='docs10' value='3' /></td>
+                        <td><input type='radio' name='docs10' value='4' /></td>
+                        <td><input type='radio' name='docs10' value='none' /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+        
+        <div id='docs-p3'>
+            <h3>Category 3: [TITLE]</h3>
+            <p><i>Examples...</i></p>
+            <ul>
+                <li>EXAMPLE 1</li>
+                <li>EXAMPLE 2</li>
+                <li>EXAMPLE 3</li>
+                <li>EXAMPLE 4</li>
+                <li>EXAMPLE 5</li>
+            </ul>
+            <br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 3 STATEMENT 1</td>
+                        <td rowspan='2'>None at All</td>
+                        <td rowspan='2'>Less Than 1 Hour Each Day</td>
+                        <td rowspan='2'>Between 1 and 3 Hours Each Day</td>
+                        <td rowspan='2'>Between 3 and 8 Hours Each Day</td>
+                        <td rowspan='2'>8 Hours or More Each Day</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs11' value='0' /></td>
+                        <td><input type='radio' name='docs11' value='1' /></td>
+                        <td><input type='radio' name='docs11' value='2' /></td>
+                        <td><input type='radio' name='docs11' value='3' /></td>
+                        <td><input type='radio' name='docs11' value='4' /></td>
+                        <td><input type='radio' name='docs11' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 3 STATEMENT 2</td>
+                        <td rowspan='2'>None at All</td>
+                        <td rowspan='2'>A Little Avoidance</td>
+                        <td rowspan='2'>A Moderate Amount of Avoidance</td>
+                        <td rowspan='2'>A Great Deal of Avoidance</td>
+                        <td rowspan='2'>Extreme Avoidance of Nearly All things</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs12' value='0' /></td>
+                        <td><input type='radio' name='docs12' value='1' /></td>
+                        <td><input type='radio' name='docs12' value='2' /></td>
+                        <td><input type='radio' name='docs12' value='3' /></td>
+                        <td><input type='radio' name='docs12' value='4' /></td>
+                        <td><input type='radio' name='docs12' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 3 STATEMENT 3</td>
+                        <td rowspan='2'>Not at All Distressed / Anxious</td>
+                        <td rowspan='2'>Mildly Distressed / Anxious</td>
+                        <td rowspan='2'>Moderately Distressed / Anxious</td>
+                        <td rowspan='2'>Severely Distressed / Anxious</td>
+                        <td rowspan='2'>Extremely Distressed / Anxious</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs13' value='0' /></td>
+                        <td><input type='radio' name='docs13' value='1' /></td>
+                        <td><input type='radio' name='docs13' value='2' /></td>
+                        <td><input type='radio' name='docs13' value='3' /></td>
+                        <td><input type='radio' name='docs13' value='4' /></td>
+                        <td><input type='radio' name='docs13' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 3 STATEMENT 4</td>
+                        <td rowspan='2'>No Disruption at All</td>
+                        <td rowspan='2'>A Little Disruption, but I Mostly Function Well</td>
+                        <td rowspan='2'>Many Things Are Disrupted, but I Can Still Manage</td>
+                        <td rowspan='2'>My Life Is Disrupted in Many Ways and I Have Trouble Managing</td>
+                        <td rowspan='2'>My Life Is Completely Disrupted and I Cannot Function at All</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs14' value='0' /></td>
+                        <td><input type='radio' name='docs14' value='1' /></td>
+                        <td><input type='radio' name='docs14' value='2' /></td>
+                        <td><input type='radio' name='docs14' value='3' /></td>
+                        <td><input type='radio' name='docs14' value='4' /></td>
+                        <td><input type='radio' name='docs14' value='none' /></td>
+                    </tr>
+                </tbody>
+
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 3 STATEMENT 5</td>
+                        <td rowspan='2'>None at All Difficult</td>
+                        <td rowspan='2'>A Little Difficult</td>
+                        <td rowspan='2'>Moderately Difficult</td>
+                        <td rowspan='2'>Very Difficult</td>
+                        <td rowspan='2'>Extremely Difficult</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs15' value='0' /></td>
+                        <td><input type='radio' name='docs15' value='1' /></td>
+                        <td><input type='radio' name='docs15' value='2' /></td>
+                        <td><input type='radio' name='docs15' value='3' /></td>
+                        <td><input type='radio' name='docs15' value='4' /></td>
+                        <td><input type='radio' name='docs15' value='none' /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+        
+        <div id="docs-p4">
+            <h3>Category 4: [TITLE]</h3>
+            <p><i>Examples...</i></p>
+            <ul>
+                <li>EXAMPLE 1</li>
+                <li>EXAMPLE 2</li>
+                <li>EXAMPLE 3</li>
+                <li>EXAMPLE 4</li>
+                <li>EXAMPLE 5</li>
+            </ul>
+            <br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 4 STATEMENT 1</td>
+                        <td rowspan='2'>None at All</td>
+                        <td rowspan='2'>Less Than 1 Hour Each Day</td>
+                        <td rowspan='2'>Between 1 and 3 Hours Each Day</td>
+                        <td rowspan='2'>Between 3 and 8 Hours Each Day</td>
+                        <td rowspan='2'>8 Hours or More Each Day</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs16' value='0' /></td>
+                        <td><input type='radio' name='docs16' value='1' /></td>
+                        <td><input type='radio' name='docs16' value='2' /></td>
+                        <td><input type='radio' name='docs16' value='3' /></td>
+                        <td><input type='radio' name='docs16' value='4' /></td>
+                        <td><input type='radio' name='docs16' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 4 STATEMENT 2</td>
+                        <td rowspan='2'>None at All</td>
+                        <td rowspan='2'>A Little Avoidance</td>
+                        <td rowspan='2'>A Moderate Amount of Avoidance</td>
+                        <td rowspan='2'>A Great Deal of Avoidance</td>
+                        <td rowspan='2'>Extreme Avoidance of Nearly All things</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs17' value='0' /></td>
+                        <td><input type='radio' name='docs17' value='1' /></td>
+                        <td><input type='radio' name='docs17' value='2' /></td>
+                        <td><input type='radio' name='docs17' value='3' /></td>
+                        <td><input type='radio' name='docs17' value='4' /></td>
+                        <td><input type='radio' name='docs17' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 4 STATEMENT 3</td>
+                        <td rowspan='2'>Not at All Distressed / Anxious</td>
+                        <td rowspan='2'>Mildly Distressed / Anxious</td>
+                        <td rowspan='2'>Moderately Distressed / Anxious</td>
+                        <td rowspan='2'>Severely Distressed / Anxious</td>
+                        <td rowspan='2'>Extremely Distressed / Anxious</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs18' value='0' /></td>
+                        <td><input type='radio' name='docs18' value='1' /></td>
+                        <td><input type='radio' name='docs18' value='2' /></td>
+                        <td><input type='radio' name='docs18' value='3' /></td>
+                        <td><input type='radio' name='docs18' value='4' /></td>
+                        <td><input type='radio' name='docs18' value='none' /></td>
+                    </tr>
+                </tbody>
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 4 STATEMENT 4</td>
+                        <td rowspan='2'>No Disruption at All</td>
+                        <td rowspan='2'>A Little Disruption, but I Mostly Function Well</td>
+                        <td rowspan='2'>Many Things Are Disrupted, but I Can Still Manage</td>
+                        <td rowspan='2'>My Life Is Disrupted in Many Ways and I Have Trouble Managing</td>
+                        <td rowspan='2'>My Life Is Completely Disrupted and I Cannot Function at All</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs19' value='0' /></td>
+                        <td><input type='radio' name='docs19' value='1' /></td>
+                        <td><input type='radio' name='docs19' value='2' /></td>
+                        <td><input type='radio' name='docs19' value='3' /></td>
+                        <td><input type='radio' name='docs19' value='4' /></td>
+                        <td><input type='radio' name='docs19' value='none' /></td>
+                    </tr>
+                </tbody>
+
+                
+                <tbody class='separator'><tr><td></td></tr></tbody>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan='3' class='text'>CAT 4 STATEMENT 5</td>
+                        <td rowspan='2'>None at All Difficult</td>
+                        <td rowspan='2'>A Little Difficult</td>
+                        <td rowspan='2'>Moderately Difficult</td>
+                        <td rowspan='2'>Very Difficult</td>
+                        <td rowspan='2'>Extremely Difficult</td>
+                        <td rowspan='2'>I Prefer Not to Answer</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type='radio' name='docs20' value='0' /></td>
+                        <td><input type='radio' name='docs20' value='1' /></td>
+                        <td><input type='radio' name='docs20' value='2' /></td>
+                        <td><input type='radio' name='docs20' value='3' /></td>
+                        <td><input type='radio' name='docs20' value='4' /></td>
+                        <td><input type='radio' name='docs20' value='none' /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+        
+        <div id='aut-instr'>
+            <p>For this task, you will be shown the names of common objects (e.g., "a brick") and your task is to come up with creative, unusual uses for this object.</p> 
+            <p>For example, here are some unusual uses for a BRICK:</p>
+            <ul>
+                <li>- Use it as a paper weight;</li>
+                <li>- Grind it up and use the sand to make paint;</li>
+                <li>- Warm it up in the oven and put it in your bed to keep the bed warm;</li>
+            </ul>
+            <p>Please express your ideas succinctly. Your responses should be creative, useful and specific to the objects. "Throw it into the ocean" is not a useful response and not specific to a brick, because you could throw anything into the ocean.</p>
+            <p>Separate your ideas with a semicolon (;)</p>
+            <p>You will have <u>three minutes</u> to generate as many creative responses as possible for the object, after which the page will submit.</p>
+        </div>
+        
+        <div id='aut-container'></div>
+        
+        <div id='aut-after'>
+            <table>
+                <tbody>
+                    <tr>
+                        <td rowspan='2' class='text'>Did you use any resources (e.g. the internet) to come up with ideas for the previous activity?</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><input type='radio' name='aut3' value='no' /></td>
+                        <td><input type='radio' name='aut3' value='yes' /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+        
+        <div id='demographics'>
+            <p>[INSTRUCTIONS].</p>
+            <br>
+            <br>
+            <div id='demo-age'>
+            <p>How old are you?</p>
+            <br>
+            <input type='number' name='age' id='age' min='18' max='120' required>
+            </div>
+            <br>
+            <br>
+            <div id='demo-gender'>
+            <p>What is your gender?</p>
+            <br>
+            <input type='radio' name='gender' id='male' value='male'/>
+            <label for='male'>Male</label>
+            <br>
+            <input type='radio' name='gender' id='female' value='female'/>
+            <label for='female'>Female</label>
+            <br>
+            <input type='radio' name='gender' id='nb' value='non-binary'/>
+            <label for='nb'>Non-Binary</label>
+            <br>
+            <input type='radio' name='gender' id='gender-none' value='none'/>
+            <label for='gender-none'>I Prefer Not to Answer</label>
+            </div>
+            <br>
+            <br>
+            <div id='demo-education'>
+            <p>What is the highest level of education you've completed?</p>
+            <br>
+            <input type='radio' name='education' id='no-hs' value='no-highschool'/>
+            <label for='no-hs'>Less Than a High School Diploma</label>
+            <br>
+            <input type='radio' name='education' id='highschool' value='highschool'/>
+            <label for='highschool'>High School Diploma</label>
+            <br>
+            <input type='radio' name='education' id='certificate' value='certificate'/>
+            <label for='certificate'>Trade Certification</label>
+            <br>
+            <input type='radio' name='education' id='associates' value='associates'/>
+            <label for='associates'>Associate's Degree</label>
+            <br>
+            <input type='radio' name='education' id='bachelors' value='bachelors'/>
+            <label for='bachelors'>Bachelor's Degree</label>
+            <br>
+            <input type='radio' name='education' id='masters' value='masters'/>
+            <label for='masters'>Master's Degree</label>
+            <br>
+            <input type='radio' name='education' id='doctorate' value='doctorate'/>
+            <label for='doctorate'>Doctoral Degree</label>
+            <br>
+            <input type='radio' name='education' id='education-none' value='none'/>
+            <label for='none'>I Prefer Not to Answer</label>
+            </div>
+            <br>
+            <br>
+            <div id='demo-browser'>
+            <p>Which internet browser did you use to complete today's study?</p>
+            <br>
+            <input type='radio' name='browser' id='chrome' value='chrome'/>
+            <label for='chrome'>Chrome</label>
+            <br>
+            <input type='radio' name='browser' id='firefox' value='firefox'/>
+            <label for='firefox'>Firefox</label>
+            <br>
+            <input type='radio' name='browser' id='opera' value='opera'/>
+            <label for='opera'>Opera</label>
+            <br>
+            <input type='radio' name='browser' id='edge' value='edge'/>
+            <label for='edge'>Edge</label>
+            <br>
+            <input type='radio' name='browser' id='ie' value='ie'/>
+            <label for='ie'>Internet Explorer</label>
+            <br>
+            <input type='radio' name='browser' id='safari' value='safari'/>
+            <label for='safari'>Safari</label>
+            <br>
+            <input type='radio' name='browser' id='idk' value='idk'/>
+            <label for='idk'>I Don't Know</label>
+            <br>
+            <input type='radio' name='browser' id='browser-none' value='none'/>
+            <label for='none'>I Prefer Not to Answer</label>
+            </div>
+            <br>
+            <br>
+        </div>
+        
+        <button id='start-surveys-btn'>Start</button>
+        <button id='next-docs-btn'>Next</button>
+        <button id='docs-p1-btn'>Next</button>
+        <button id='docs-p2-btn'>Next</button>
+        <button id='docs-p3-btn'>Next</button>
+        <button id='next-aut-btn'>Next</button>
+        
+        <button id='save-smw-btn'>Save</button>
+        <button id='save-dmw-btn'>Save</button>
+        <button id='save-ut-btn'>Save</button>
+        <button id='save-dass-btn'>Save</button>
+        <button id='save-asrs-btn'>Save</button>
+        <button id='save-docs-btn'>Save</button>
+        <button id='save-aut-btn'>Save</button>
+        <button id='inter-aut-btn'>Next</button>
+        <button id='save-demo-btn'>Submit</button>
+        
+        <div id='do-not-refresh'>
+            <br><p><b><i>Warning: Refreshing your browser will cause the task to reset. Please do not refresh your browser.</i></b></p>
+        </div>
+
+        <script src='survey.js'></script>
+        
+    </body>
+
+    </html>
